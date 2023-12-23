@@ -4,7 +4,6 @@ module.exports = {
   useTabs: false,
   singleQuote: true,
   semi: true,
-  trailingComma: 'none',
   bracketSpacing: true,
   quoteProps: 'as-needed',
   proseWrap: 'always', // 超过最大宽度是否换行<always|never|preserve>，默认preserve

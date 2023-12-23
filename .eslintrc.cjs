@@ -17,6 +17,12 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['*.ts', '*.tsx'], // Apply rules only to TypeScript files
+      rules: {
+        'no-unused-vars': 'off', // Disable 'no-unused-vars' rule for TypeScript files
+      },
+    },
+    {
       env: {
         node: true
       },
@@ -41,7 +47,6 @@ module.exports = {
     'no-alert': 2,
     'no-dupe-keys': 2,
     'no-dupe-args': 2,
-    'no-use-before-define': [2, { functions: false }],
     '@typescript-eslint/no-explicit-any': ['off'],
     'import/prefer-default-export': 0
   }
