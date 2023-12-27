@@ -2,11 +2,11 @@ import { message } from 'antd';
 import { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import { netWorkErrMap, authErrMap } from './config.ts';
 
-// 添加token
+// 添加其他请求头
 export const handleRequestHeader = (config: InternalAxiosRequestConfig<any>, otherConfig: object) => {
   return { ...config, ...otherConfig };
 };
-// 添加限权
+// 添加token
 export const handleAuth = (config: InternalAxiosRequestConfig<any>) => {
   config.headers['Authorization'] = localStorage.getItem('token') || '';
   return config;
