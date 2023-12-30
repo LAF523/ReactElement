@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Layout, theme } from 'antd';
 import LayoutMenu from './components/menu';
-import LayoutMain from './components/main';
 import ContextMenu from './components/contextMenu';
 import LayoutHeader from './components/header';
+import { Outlet } from 'react-router-dom';
 
 const { Header, Sider, Content } = Layout;
 
@@ -40,7 +40,7 @@ const PageLayout: React.FC = () => {
             borderRadius: borderRadiusLG
           }}
         >
-          <LayoutMain />
+          <Outlet />
         </Content>
       </Layout>
     </Layout>

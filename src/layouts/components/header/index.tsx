@@ -6,6 +6,7 @@ interface IsProps {
   collapsed: boolean;
   changeCollapsed: (value: boolean) => void;
 }
+
 const LayoutHeader: React.FC<IsProps> = props => {
   const { collapsed, changeCollapsed } = props;
   return (
