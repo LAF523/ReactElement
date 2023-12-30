@@ -2,8 +2,8 @@ import { Menu, MenuProps, Tabs } from 'antd';
 import React, { useRef } from 'react';
 import './style.less';
 import { ReloadOutlined, ArrowLeftOutlined, ArrowRightOutlined, CloseOutlined } from '@ant-design/icons';
-import getItem from '../../../utils';
-import useRightClick from '../../../hooks/useRightClick.ts';
+import getItem from '@/utils';
+import useRightClick from '@/hooks/useRightClick.ts';
 type MenuItem = Required<MenuProps>['items'][number];
 
 const menuItemList: MenuItem[] = [
