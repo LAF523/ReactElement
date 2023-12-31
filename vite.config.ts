@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -42,6 +43,14 @@ export default defineConfig(({ mode }) => {
             test: '#1CC0FF'
           }
         }
+      }
+    },
+    test: {
+      globals: true,
+      environment: 'jsdom', //提供浏览器API以模拟浏览器环境
+      coverage: {
+        provider: 'v8',
+        reporter: ['text', 'json', 'html']
       }
     },
     server: {
