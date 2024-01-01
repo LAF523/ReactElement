@@ -49,6 +49,7 @@ module.exports = {
     'no-dupe-args': 2,
     '@typescript-eslint/no-explicit-any': ['off'],
     'import/prefer-default-export': 0,
-    'react/prop-types': 'off' // 使用ts的参数类型检查
+    'react/prop-types': 'off', // 使用ts的参数类型检查
+    'react/display-name': 'off'
   }
 };

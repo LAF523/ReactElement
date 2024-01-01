@@ -7,7 +7,7 @@ import { describe, it, expect, vi } from 'vitest';
 // expect 用来断言，期望
 
 // 引入被测试组件
-import Button from './index';
+import Button from '@/components/button/index';
 
 // 测试思路:
 // 1.需要测试什么
