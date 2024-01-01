@@ -19,8 +19,8 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'], // Apply rules only to TypeScript files
       rules: {
-        'no-unused-vars': 'off', // Disable 'no-unused-vars' rule for TypeScript files
-      },
+        'no-unused-vars': 'off' // Disable 'no-unused-vars' rule for TypeScript files
+      }
     },
     {
       env: {
@@ -48,6 +48,7 @@ module.exports = {
     'no-dupe-keys': 2,
     'no-dupe-args': 2,
     '@typescript-eslint/no-explicit-any': ['off'],
-    'import/prefer-default-export': 0
+    'import/prefer-default-export': 0,
+    'react/prop-types': 'off' // 使用ts的参数类型检查
   }
 };
