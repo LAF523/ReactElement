@@ -29,6 +29,17 @@ export const menuItems: MenuItem[] = [
         key: '/form'
       }
     ]
+  },
+  {
+    label: 'Redux Demo',
+    key: '3',
+    icon: <ProfileOutlined />,
+    children: [
+      {
+        label: 'Redux',
+        key: '/ReduxDemo'
+      }
+    ]
   }
 ];
 
