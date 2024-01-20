@@ -13,6 +13,7 @@ function Loading(Element: React.FC) {
 const Layout = Loading(lazy(() => import('@/layouts')));
 const Button = Loading(lazy(() => import('@/pages/button')));
 const Form = Loading(lazy(() => import('@/pages/form')));
+const ReduxDemoPage = Loading(lazy(() => import('@/pages/reduxDemoPage')));
 const NotFound = Loading(lazy(() => import('@/pages/notFound')));
 const router = [
   {
@@ -26,6 +27,10 @@ const router = [
       {
         path: '/Form',
         element: Form
+      },
+      {
+        path: '/ReduxDemo',
+        element: ReduxDemoPage
       },
       {
         path: '*',
